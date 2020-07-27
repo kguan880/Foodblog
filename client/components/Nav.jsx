@@ -10,8 +10,8 @@ export default function Nav() {
                 <ul className="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Recipes</a></li>
                 </ul>
                 <div className="burger">
                     <div className="line"></div>
