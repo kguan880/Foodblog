@@ -5,9 +5,9 @@
     font-family: 'Poppins';
 }
 
-.container {
-    max-width: 80vw;
-}
+
+
+
 nav {
     display:flex;
     justify-content: space-around;
@@ -129,4 +129,33 @@ nav {
 
 .landing-page p{
     color:#cccccc;
+}
+
+/* ------------------------- ABOUT PAGE CSS -------------------------------------------- */
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    width: 100%;
+    background-image: url("https://c.pxhere.com/images/9f/e8/c0a5bd1ecdbb7118d16639db37be-1437379.jpg!d");
+    background-size: cover;
+}
+.about-header {
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    display: flex;
+    height: 52vh;
+    width: 80%;
+    justify-content: center;
+    align-self: center;
+    background-color: azure;
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    padding: 20px;
 }
