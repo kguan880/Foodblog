@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-react-redux",
+  "name": "foodblog",
   "version": "0.1.0",
   "description": "Foodblog: For all your hunger needs",
   "main": "index.js",
