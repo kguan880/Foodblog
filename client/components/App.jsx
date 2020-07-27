@@ -1,19 +1,18 @@
-// import external modules
 import React from 'react'
+import { BrowerRouter, Switch, Route } from 'react-router-dom'
 import { connect } from 'react-redux'
+import Nav from "./Nav"
+import Landing from "./Landing"
+import About from './About'
 
-// local imports
-
-// define class component 
 export class App extends React.Component {
-  render(){
-    return(
-      <>
-        <h1>Development has begun</h1>
-        <h2>Behold I am the App component</h2>
-      </>
-    )
-  }
+    render() {
+        return <>
+            <Nav />
+            <Landing />
+            <About />
+        </>
+    }
 }
 
 export default connect()(App)

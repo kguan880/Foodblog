@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container {
+    max-width: 80vw;
+}
+nav {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color:whitesmoke;
+}
+
+.logo{
+    color: #603939;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    height: 100%;
+}
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #603939;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.burger{
+    display: none;
+}
+
+.burger div {
+    width:25px;
+    height:3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+
+}
+@media screen and  (max-width: 1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and  (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%); 
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        /* transition: transform 0.5s ease-in;  */
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/*-------------------------- landing page css -------------------------*/
+
+.landing-page {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://willowtreefarm.com/wp-content/uploads/2017/02/Willow-Tree-Recipes-Callout-Background-1.jpg");
+    background-size: cover;
+}
+
+.landing-text{
+
+    width: 50%;
+}
+
+.landing-page h1{
+    text-align: center;
+    font-size: 60px;
+    color: rgb(226, 226, 226);
+}
+
+.landing-page p{
+    color:#cccccc;
+}
