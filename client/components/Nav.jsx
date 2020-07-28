@@ -5,7 +5,7 @@ export default function Nav() {
         <>
             <nav>
                 <div className="logo">
-                    <h4> The Nav</h4>
+                    <h4> Foodblog</h4>
                 </div>
                 <ul className="nav-links">
                     <li><a href="#">Home</a></li>

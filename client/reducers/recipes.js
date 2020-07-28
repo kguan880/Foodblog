@@ -6,10 +6,8 @@ const initialState = []
 // define reducer
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'GET_RECIPES':
+        case 'SET_RECIPES':
             return action.recipes
-        case 'SET_RECIPE':
-            return action.recipe
         default:
             return state
     }

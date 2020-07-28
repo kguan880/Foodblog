@@ -6,7 +6,22 @@
 }
 
 
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 92vh;
+    width: 100%;
+}
 
+.box {
+    background-color: azure;
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+/*---------------------- NAV CSS -----------------------*/
 
 nav {
     display:flex;
@@ -105,6 +120,8 @@ nav {
     }
 }
 
+
+
 /*-------------------------- landing page css -------------------------*/
 
 .landing-page {
@@ -154,8 +171,35 @@ nav {
     width: 80%;
     justify-content: center;
     align-self: center;
-    background-color: azure;
-    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 25px;
-    padding: 20px;
+}
+
+
+/* ------------------------- SEARCH PAGE CSS -------------------------------------------- */
+
+.search-page-header {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.search-background {
+    background-image: url("https://www.paymentsjournal.com/wp-content/uploads/2017/12/Fotolia_122524974_Subscription_Monthly_M.jpg");
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px 14px;
+    margin: 4px 0;
 }

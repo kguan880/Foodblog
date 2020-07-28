@@ -1,8 +1,8 @@
 import { getRecipes } from '../apis/recipeSearch'
 
-export function getRecipe(recipes) {
+export function setRecipe(recipes) {
     return {
-        type: 'GET_RECIPES',
+        type: 'SET_RECIPES',
         recipes,
     }
 }
@@ -11,7 +11,7 @@ export function fetchRecipes(ingredient1, ingredient2, ingredient3){
     return (dispatch) =>{
         getRecipes(ingredient1, ingredient2, ingredient3)
             .then((recipes) =>{
-                dispatch(getRecipe(recipes))
+                dispatch(setRecipe(recipes))
             })
     }
 }
