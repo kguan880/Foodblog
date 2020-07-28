@@ -37,6 +37,7 @@ class RecipeSearch extends React.Component {
                 })
             )
         })
+        console.log("generate")
 
     }
 
@@ -64,6 +65,7 @@ class RecipeSearch extends React.Component {
                     </div>
                 </div>
                 {this.state.submitted === true ? <RecipeList recipes={this.state.results} /> : null}
+            
             </>
         )
     }
