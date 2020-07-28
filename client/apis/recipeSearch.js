@@ -23,3 +23,23 @@ export function getRecipes(ingredient1, ingredient2, ingredient3) {
             console.log(error)
         })
 }
+
+export function getSummary(id){
+    const recipeId = Number(id)
+    return axios({
+        "method":"GET",
+        "url":`https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/information`,
+        "headers":{
+        "content-type":"application/octet-stream",
+        "x-rapidapi-host":"spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+        "x-rapidapi-key":"5c39852eaamsh3c0ab5fa50d28aep1611abjsnaf1fa66de821",
+        "useQueryString":true
+        }
+        })
+        .then((response)=>{
+          return(response.data)
+        })
+        .catch((error)=>{
+          console.log(error)
+        })
+}

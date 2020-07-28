@@ -5,6 +5,7 @@ import Nav from "./Nav"
 import Landing from "./Landing"
 import About from './About'
 import RecipeSearch from './RecipeSearch'
+import RecipeSum from './RecipeSum'
 // import Result from './Result'
 
 export class App extends React.Component {
@@ -15,10 +16,9 @@ export class App extends React.Component {
                 <Route exact path="/" component={Landing} />
                 <Route exact path="/" component={About} />
                 <Route exact path="/" component={RecipeSearch} />
-                {/* <Route exact path="/results" component={Results} /> */}
+                <Route exact path="/recipe/:id" component={RecipeSum} />
             </BrowserRouter>
 
-            {/* <Route exact path="/results:id" component={Result} /> */}
         </>
     }
 }

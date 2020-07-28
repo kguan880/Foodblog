@@ -11,7 +11,6 @@ export default function Nav() {
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Recipes</a></li>
                 </ul>
                 <div className="burger">
                     <div className="line"></div>
