@@ -9,7 +9,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    position: absolute;
     height: 92vh;
     width: 100%;
 }
@@ -202,4 +201,26 @@ nav {
     width: 100%;
     padding: 8px 14px;
     margin: 4px 0;
+}
+
+.recipe-list{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.recipe-list a{
+    text-decoration: none;
+}
+
+.recipe-list li{
+    list-style: none;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
 }
