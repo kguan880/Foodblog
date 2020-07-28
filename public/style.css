@@ -20,6 +20,21 @@
     padding: 20px;
 }
 
+.footer{
+    display:flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    height: 30vh;
+    text-align: center;
+}
+
+.footer .logo{
+    align-self: center;
+}
+
+.footer .contact{
+    align-self: center;
+}
 /*---------------------- NAV CSS -----------------------*/
 
 nav {
@@ -35,6 +50,11 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #603939;
 }
 
 .nav-links{
@@ -243,3 +263,4 @@ nav {
     background-color: white;
     margin-left: 10px;
 }
+

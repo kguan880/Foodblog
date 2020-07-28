@@ -5,10 +5,10 @@ export default function Nav() {
         <>
             <nav>
                 <div className="logo">
-                    <h4> Foodblog</h4>
+                    <a href="/"><h4>Foodblog</h4></a>
                 </div>
                 <ul className="nav-links">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>

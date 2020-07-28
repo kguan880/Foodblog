@@ -6,6 +6,7 @@ import Landing from "./Landing"
 import About from './About'
 import RecipeSearch from './RecipeSearch'
 import RecipeSum from './RecipeSum'
+import Footer from './Footer'
 // import Result from './Result'
 
 export class App extends React.Component {
@@ -17,6 +18,7 @@ export class App extends React.Component {
                 <Route exact path="/" component={About} />
                 <Route exact path="/" component={RecipeSearch} />
                 <Route exact path="/recipe/:id" component={RecipeSum} />
+                <Route path="/" component={Footer} />
             </BrowserRouter>
 
         </>
