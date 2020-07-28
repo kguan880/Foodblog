@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect, Link } from 'react-router-dom'
 import { connect } from "react-redux"
 import { fetchRecipes } from '../actions/recipeAction'
 
@@ -8,7 +9,6 @@ class RecipeSearch extends React.Component {
         ingredient1: "",
         ingredient2: "",
         ingredient3: "",
-        results: []
     }
 
     handleChange = (event) => {
@@ -40,7 +40,7 @@ class RecipeSearch extends React.Component {
                         <input type="text" name="ingredient1" value={this.state.ingredient1} required onChange={this.handleChange} />
                         <input type="text" name="ingredient2" value={this.state.ingredient2} required onChange={this.handleChange} />
                         <input type="text" name="ingredient3" value={this.state.ingredient3} required onChange={this.handleChange} />
-                        <input type="submit" value="Generate" />
+                        <Link to='/results'><input type="submit" value="Generate" /></Link>
                     </form>
                 </div>
 
