@@ -28,3 +28,12 @@ function render() {
     document.getElementById('app')
   )
 }
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   render(
+//     <Provider store={store}>
+//       <App />
+//     </Provider>,
+//     document.getElementById('app')
+//   )
+// })

@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import Nav from "./Nav"
 import Landing from "./Landing"
 import About from './About'
-import RecipeSeach from './RecipeSeach'
+import RecipeSearch from './RecipeSeach'
 
 
 export class App extends React.Component {
@@ -13,7 +13,7 @@ export class App extends React.Component {
             <Nav />
             <Landing />
             <About />
-            <RecipeSeach />
+            <RecipeSearch />
         </>
     }
 }
